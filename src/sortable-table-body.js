@@ -1,4 +1,4 @@
-import { Component, PropTypes } from "react";
+import { Component } from "react";
 
 class SortableTableRow extends Component {
   render() {
@@ -22,13 +22,13 @@ class SortableTableRow extends Component {
 }
 
 export default class SortableTableBody extends Component {
-  static propTypes = {
-    data: PropTypes.array.isRequired,
-    columns: PropTypes.array.isRequired,
-    sortings: PropTypes.array.isRequired,
-    rowKey: PropTypes.string,
-    item: PropTypes.object
-  };
+  // static propTypes = {
+  //   data: PropTypes.array.isRequired,
+  //   columns: PropTypes.array.isRequired,
+  //   sortings: PropTypes.array.isRequired,
+  //   rowKey: PropTypes.string,
+  //   item: PropTypes.object
+  // };
 
   render() {
     var bodies = this.props.data.map(
